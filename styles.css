@@ -38,6 +38,10 @@ html {
 .textblock p {
   margin-bottom: 2em;
 }
+.textblock.reverse {
+  background-color: #777;
+  color: #fff;
+}
 .slides div {
   width: 100vw;
   height: 30vw;
@@ -63,9 +67,7 @@ html {
   border-radius: 2px;
 }
 
-.bgimg-1,
-.bgimg-2,
-.bgimg-3 {
+.bgimg {
   position: relative;
   opacity: 0.65;
   background-attachment: fixed;
@@ -74,6 +76,7 @@ html {
   background-size: cover;
   z-index: 0;
 }
+
 .bgimg-1 {
   background-image: url("bg1.png");
   /* min-height: 100%; */
@@ -84,13 +87,18 @@ html {
 }
 
 .bgimg-2 {
-  background-image: url("bg2.jpg");
+  background-image: url("img/368933c5d22529305137696bd3618799.jpg");
   height: 50vw;
 }
 
 .bgimg-3 {
-  background-image: url("img_parallax3.jpg");
-  min-height: 400px;
+  background-image: url("img/a82bc05b254d9048363c8f4145a0d9e3.jpg");
+  min-height: 30vw;
+}
+
+.bgimg-4 {
+  background-image: url("img/3cee74158c670bb5feb47e31380b397b.jpg");
+  min-height: 50vw;
 }
 
 .caption {
@@ -116,7 +124,7 @@ h3 {
 }
 
 /* Turn off parallax scrolling for tablets and phones */
-@media only screen and (max-device-width: 1024px) {
+@media only screen and (max-device-width: 480px) {
   .bgimg-1,
   .bgimg-2,
   .bgimg-3 {
